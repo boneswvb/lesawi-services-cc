@@ -1,13 +1,16 @@
-import React from "react";
+import React from 'react';
 
-import HeaderComp from "./components/HeaderComp";
-import FooterComp from "./components/FooterComp";
-import NavBarComp from "./components/NavBarComp";
-import AboutPage from "./pages/AboutPage";
-import HomePage from "./pages/HomePage";
-import ProjectsPage from "./pages/ProjectsPage";
+import { Switch, Route } from 'react-router-dom';
 
-import "./App.css";
+import HeaderComp from './components/HeaderComp';
+import FooterComp from './components/FooterComp';
+import NavBarComp from './components/NavBarComp';
+import AboutPage from './pages/AboutPage';
+import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
+import UserProfile from './pages/UserProfilePage';
+
+import './App.css';
 
 function App() {
   return (
@@ -16,14 +19,21 @@ function App() {
         <HeaderComp />
         <NavBarComp />
       </header>
-      <br /><br />
-      <body className="tc">
-        <AboutPage />
-        <HomePage />
-        <ProjectsPage />
-      </body>
-      <br /><br />
-      <footer className="tc">
+      <Switch>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route path="/aboutpage">
+          <AboutPage />
+        </Route>
+        <Route path="/projectspage">
+          <ProjectsPage />
+        </Route>
+        <Route path="/userprofilepage">
+          <UserProfile />
+        </Route>
+      </Switch>
+      <footer>
         <FooterComp />
       </footer>
     </div>

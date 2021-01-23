@@ -1,11 +1,11 @@
-import React from "react";
-
-import HomeComp from "../components/HomeComp";
+import React from 'react';
 
 import { Helmet } from 'react-helmet';
 
-const HomePage = () => {
-  return(
+import HomeComp from '../components/HomeComp';
+
+function HomePage() {
+  return (
     <div>
       <Helmet>
         <meta
@@ -17,7 +17,7 @@ const HomePage = () => {
       </Helmet>
       <HomeComp />
     </div>
-  )
+  );
 }
 
 export default HomePage;

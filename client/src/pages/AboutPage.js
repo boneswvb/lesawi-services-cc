@@ -1,11 +1,11 @@
-import React from "react";
-
-import AboutComp from "../components/AboutComp";
+import React from 'react';
 
 import { Helmet } from 'react-helmet';
 
-const AboutPage = () => {
-  return(
+import AboutComp from '../components/AboutComp';
+
+function AboutPage() {
+  return (
     <div>
       <Helmet>
         <meta
@@ -17,7 +17,7 @@ const AboutPage = () => {
       </Helmet>
       <AboutComp />
     </div>
-  )
+  );
 }
 
 export default AboutPage;

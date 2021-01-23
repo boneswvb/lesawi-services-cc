@@ -1,11 +1,12 @@
-import React from "react";
-
-import ProjectsComp from "../components/ProjectsComp";
+import React from 'react';
 
 import { Helmet } from 'react-helmet';
 
-const ProjectsPage = () => {
-  return(
+import ProjectsComp from '../components/ProjectsComp';
+import ProjectsCon from '../containers/ProjectsCon';
+
+function ProjectsPage() {
+  return (
     <div>
       <Helmet>
         <meta
@@ -15,9 +16,25 @@ const ProjectsPage = () => {
         <meta name="description" content="Agents" />
         <title>Lesawi Services CC - Your one stop web app solution</title>
       </Helmet>
-      <ProjectsComp />
+      <div>
+        {
+          ProjectsCon.map((items, i) => (
+            <ProjectsComp
+              key={i}
+              projectNumber={ProjectsCon[i].projectNumber}
+              id={ProjectsCon[i].id}
+              projectName={ProjectsCon[i].projectName}
+              image={ProjectsCon[i].image}
+              hrefLink={ProjectsCon[i].hrefLink}
+              alt={ProjectsCon[i].alt}
+              target={ProjectsCon[i].target}
+              comment={ProjectsCon[i].comment}
+            />
+          ))
+        }
+      </div>
     </div>
-  )
+  );
 }
 
 export default ProjectsPage;
