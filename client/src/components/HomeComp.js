@@ -8,7 +8,7 @@ function HomeComp() {
       <Media>
         <Media.Body className="tc">
           <h1>Welcome to LeSaWi Services CC</h1>
-          <h5>Web App Development - Your one stop solution</h5>
+          <h5>Web App Development - A new start for your business</h5>
         </Media.Body>
       </Media>
       <br />

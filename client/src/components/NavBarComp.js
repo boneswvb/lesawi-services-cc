@@ -15,7 +15,7 @@ function NavBarComp() {
   const { isSignedOn } = useContext(Context);
   return (
     <div className="container mt-2">
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="sm">
         {/* <Link to="/"><Navbar.Brand>LeSaWi</Navbar.Brand></Link> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,6 +27,7 @@ function NavBarComp() {
                 : null
             }
             <Nav.Link><Link to="/aboutpage">About</Link></Nav.Link>
+            <Nav.Link><Link to="/pricingpage">Pricing</Link></Nav.Link>
             <Nav.Link><Link to="/projectspage">Projects</Link></Nav.Link>
           </Nav>
           <Form inline>

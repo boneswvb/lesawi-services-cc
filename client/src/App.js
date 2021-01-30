@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import UserProfile from './pages/UserProfilePage';
+import PricingPage from './pages/PricingPage';
 
 import './App.css';
 
@@ -23,14 +24,17 @@ function App() {
         <Route exact path="/">
           <HomePage />
         </Route>
+        <Route path="/userprofilepage">
+          <UserProfile />
+        </Route>
         <Route path="/aboutpage">
           <AboutPage />
         </Route>
+        <Route path="/pricingpage">
+          <PricingPage />
+        </Route>
         <Route path="/projectspage">
           <ProjectsPage />
-        </Route>
-        <Route path="/userprofilepage">
-          <UserProfile />
         </Route>
       </Switch>
       <footer>
