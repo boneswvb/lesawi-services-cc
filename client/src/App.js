@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
 import UserProfile from './pages/UserProfilePage';
 import PricingPage from './pages/PricingPage';
+import TermAndConditionsPage from './pages/TermAndConditionsPage';
 
 import './App.css';
 
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path="/projectspage">
           <ProjectsPage />
+        </Route>
+        <Route path="/termandconditionspage">
+          <TermAndConditionsPage />
         </Route>
       </Switch>
       <footer>

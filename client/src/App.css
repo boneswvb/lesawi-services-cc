@@ -8,6 +8,17 @@ h6 {
   color: #ffffff;
 }
 
+.background {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 1024px) {
   .noDisplay {
     display: none;
@@ -20,5 +31,6 @@ h6 {
   h5,
   h6 {
     color: #000000;
+    font-size: 1.5em;
   }
 }

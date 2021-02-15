@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Media from 'react-bootstrap/Media';
+import TopOfPage from '../utils/TopOfPage';
 
 function HomeComp() {
   return (
@@ -83,8 +84,6 @@ function HomeComp() {
             <strong>Sites using React:</strong>
             BBC, Netflix, Dropbox, Coursera, IMDb, PayPal, Dailymotion, Chrysler, American Express,
             Intuit, Khan Academy, Lyft, Atlassian, New York Times, Reddit and dozens of others.
-            One of our recent projects, Mochi – Pet Supplies & Food, is also built using React
-            Native, and currently, it gains traction.
             <p>
               Using ReactJS to develop an app requires you hire the Best Reactjs Development Company
               around you. Getting a ReactJS developer team to run your project saves you more time
@@ -92,6 +91,7 @@ function HomeComp() {
             </p>
             <h5>
               <strong>An open-source Facebook library:</strong>
+              &nbsp;
               constantly developing and open to the community
             </h5>
             <p>
@@ -106,7 +106,6 @@ function HomeComp() {
             <h5>
               Virtual DOM
             </h5>
-
             <p>
               In many front-end frameworks, DOM (Document Object Model) is a tree-shaped HTML
               representation of all elements of a web application, built into a parent-child
@@ -139,7 +138,7 @@ function HomeComp() {
       <Media>
         <Media.Body className="tc">
           <h4>Just for Geeks</h4>
-          <h6>What is under the hood of my products</h6>
+          <h6>What is under the hood of this web site</h6>
           <p>
             <strong>dependencies:</strong>
             &nbsp;
@@ -171,6 +170,7 @@ function HomeComp() {
           </p>
         </Media.Body>
       </Media>
+      <TopOfPage />
     </div>
   );
 }

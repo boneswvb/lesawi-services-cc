@@ -80,7 +80,7 @@ function ContactFormComp({
               />
             </Form.Group>
             <Form.Group controlId="haveAllContent">
-              <p>
+              <p style={{ color: 'black' }}>
                 <strong>
                   Do you have all the content needed for the web site?
                 </strong>
@@ -129,16 +129,11 @@ function ContactFormComp({
                 value={data.otherComments}
               />
             </Form.Group>
+            <button type="submit">Submit</button>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleclose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleclose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        {/* <Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     </div>
   );

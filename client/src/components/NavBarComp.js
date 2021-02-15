@@ -15,32 +15,34 @@ function NavBarComp() {
   const { isSignedOn } = useContext(Context);
   return (
     <div className="container mt-2">
-      <Navbar bg="light" expand="sm">
-        {/* <Link to="/"><Navbar.Brand>LeSaWi</Navbar.Brand></Link> */}
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+      {
+        isSignedOn
+          ? <Nav.Link><Link to="/userprofilepage">Profile Page</Link></Nav.Link>
+          : null
+      }
+      {/* <Nav.Link><Link to="/aboutpage">About</Link></Nav.Link> */}
+      {/* <Nav.Link><Link to="/projectspage">Projects</Link></Nav.Link> */}
+
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-            {
-              isSignedOn
-                ? <Nav.Link><Link to="/userprofilepage">Profile Page</Link></Nav.Link>
-                : null
-            }
-            <Nav.Link><Link to="/aboutpage">About</Link></Nav.Link>
-            <Nav.Link><Link to="/pricingpage">Pricing</Link></Nav.Link>
-            <Nav.Link><Link to="/projectspage">Projects</Link></Nav.Link>
+            <Nav.Link eventKey={2}><Link to="/">Home</Link></Nav.Link>
+            <Nav.Link eventKey={2}><Link to="/pricingpage">Pricing</Link></Nav.Link>
+            <Nav.Link eventKey={2}><Link to="/termandconditionspage">Term And Conditions</Link></Nav.Link>
           </Nav>
-          <Form inline>
-            <Nav.Link>
-              <h3 style={{ color: '#000000' }}>
-                <strong>Opening 1 February 2021</strong>
-              </h3>
-            </Nav.Link>
-            {/* <Logon />
-            <RegisterCon /> */}
-          </Form>
         </Navbar.Collapse>
+        <Form inline>
+          <Nav.Link eventKey={2}>
+            <h3 style={{ color: '#ffffff' }}>
+              <strong>Opening 1 March 2021</strong>
+            </h3>
+          </Nav.Link>
+          {/* <Logon />
+            <RegisterCon /> */}
+        </Form>
       </Navbar>
+      <hr />
     </div>
   );
 }

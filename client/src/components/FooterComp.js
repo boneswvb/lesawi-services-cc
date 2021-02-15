@@ -8,6 +8,7 @@ function FooterComp() {
   return (
     <div className="container">
       <div className="blackFonts">
+        <hr />
         <Media>
           <Media.Body>
             <h4>LeSaWi Services CC</h4>
@@ -30,7 +31,9 @@ function FooterComp() {
             <p>
               Cell: 071 099 2811
               <br />
-              Email: info@lesawi.co.za
+              <a href="mailto: info@lesawi.co.za">
+                <p>Email: info@lesawi.co.za</p>
+              </a>
             </p>
           </Media.Body>
         </Media>

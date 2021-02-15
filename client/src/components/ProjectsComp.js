@@ -5,6 +5,8 @@ import Image from 'react-bootstrap/Image';
 
 import PropTypes from 'prop-types';
 
+import TopOfPage from '../utils/TopOfPage';
+
 function ProjectsComp({
   id,
   projectName,
@@ -35,6 +37,7 @@ function ProjectsComp({
           </p>
         </Media.Body>
       </Media>
+      <TopOfPage />
     </div>
   );
 }
