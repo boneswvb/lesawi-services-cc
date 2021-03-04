@@ -8,7 +8,7 @@ import NavBarComp from './components/NavBarComp';
 import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
-import UserProfile from './pages/UserProfilePage';
+import UserProfilePage from './pages/UserProfilePage';
 import PricingPage from './pages/PricingPage';
 import TermAndConditionsPage from './pages/TermAndConditionsPage';
 
@@ -26,7 +26,7 @@ function App() {
           <HomePage />
         </Route>
         <Route path="/userprofilepage">
-          <UserProfile />
+          <UserProfilePage />
         </Route>
         <Route path="/aboutpage">
           <AboutPage />

@@ -13,12 +13,6 @@ h6 {
   color: #ffffff;
 }
 
-.nav {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  border-radius: 5px;
-}
-
 @media only screen and (max-width: 1024px) {
   .noDisplay {
     display: none;
