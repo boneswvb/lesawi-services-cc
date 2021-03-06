@@ -16,7 +16,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div classname="tc">
       <header className="tc">
         <HeaderComp />
         <NavBarComp />

@@ -6,7 +6,7 @@ function TopOfPage() {
   return (
     <div>
       <div className="d-flex justify-content-end">
-        <Button variant="outline-secondary" href="#top">TopOfPage</Button>
+        <Button variant="outline-secondary" href="#top">Top Of Page</Button>
       </div>
     </div>
   );

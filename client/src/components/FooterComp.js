@@ -14,15 +14,15 @@ function FooterComp() {
             <h4>LeSaWi Services CC</h4>
             <h6>Web App Development</h6>
           </Media.Body>
-          <Media.Body>
+          <Media.Body className="noDisplay">
             <h1>&nbsp;</h1>
             <h5>&nbsp;</h5>
           </Media.Body>
-          <Media.Body>
+          <Media.Body className="noDisplay">
             <h1>&nbsp;</h1>
             <h5>&nbsp;</h5>
           </Media.Body>
-          <Media.Body>
+          <Media.Body className="noDisplay">
             <h1>&nbsp;</h1>
             <h5>&nbsp;</h5>
           </Media.Body>

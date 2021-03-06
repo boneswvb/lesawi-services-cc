@@ -69,7 +69,7 @@ function PricingComp() {
                     <ListGroup.Item>No data base</ListGroup.Item>
                     <ListGroup.Item>No extras</ListGroup.Item>
                   </ListGroup>
-                  <Button>
+                  <Button variant="none">
                     <ContactFormCon />
                   </Button>
                 </Card>
@@ -110,7 +110,7 @@ function PricingComp() {
                     <ListGroup.Item>No data base</ListGroup.Item>
                     <ListGroup.Item>All extras to be quoted</ListGroup.Item>
                   </ListGroup>
-                  <Button>
+                  <Button variant="none">
                     <ContactFormCon />
                   </Button>
                 </Card>
@@ -151,7 +151,7 @@ function PricingComp() {
                     <ListGroup.Item>Data base to be quoted</ListGroup.Item>
                     <ListGroup.Item>All extras to be quoted</ListGroup.Item>
                   </ListGroup>
-                  <Button>
+                  <Button variant="none">
                     <ContactFormCon />
                   </Button>
                 </Card>

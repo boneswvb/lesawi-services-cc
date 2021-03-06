@@ -16,7 +16,7 @@ function ContactFormComp({
 }) {
   return (
     <div>
-      <Button variant="primary" onClick={handleshow}>
+      <Button variant="none" onClick={handleshow}>
         Contact Us Now!
       </Button>
 
